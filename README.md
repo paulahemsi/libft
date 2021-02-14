@@ -20,13 +20,13 @@ The aim of this project is to code a C library regrouping usual functions.
 
 | Function | Description |
 | --- | --- |
-| [**ft\_isalpha()**](https://github.com/paulahemsi/libft/ft_isalpha.c) |checks for an alphabetic character.|
-| [**ft\_isdigit()**](https://github.com/paulahemsi/libft/ft_isdigit.c) | checks for a digit (0 through 9).|
-| [**ft\_isalnum()**](https://github.com/paulahemsi/libft/ft_isalnum.c) | checks for an alphanumeric character; it  is  equivalent  to (isalpha(c) || isdigit(c)).|
-| [**ft\_isascii()**](https://github.com/paulahemsi/libft/ft_isascii.c) | checks  whether  c  is a 7-bit unsigned char value that fits into the ASCII character set. |
-| [**ft\_isprint()**](https://github.com/paulahemsi/libft/ft_isprinti.c) | checks for any printable character including space.|
-| [**ft\_toupper()**](https://github.com/paulahemsi/libft/ft_toupper.c) | convert lowercase letters to uppercase|
-| [**ft\_tolower()**](https://github.com/paulahemsi/libft/ft_tolower.c) | convert uppercase letters to lowercase. |
+| [**ft\_isalpha()**](https://github.com/paulahemsi/libft/blob/main/ft_isalpha.c) |checks for an alphabetic character.|
+| [**ft\_isdigit()**](https://github.com/paulahemsi/libft/blob/main/ft_isdigit.c) | checks for a digit (0 through 9).|
+| [**ft\_isalnum()**](https://github.com/paulahemsi/libft/blob/main/ft_isalnum.c) | checks for an alphanumeric character; it  is  equivalent  to (isalpha(c) || isdigit(c)).|
+| [**ft\_isascii()**](https://github.com/paulahemsi/libft/blob/main/ft_isascii.c) | checks  whether  c  is a 7-bit unsigned char value that fits into the ASCII character set. |
+| [**ft\_isprint()**](https://github.com/paulahemsi/libft/blob/main/ft_isprinti.c) | checks for any printable character including space.|
+| [**ft\_toupper()**](https://github.com/paulahemsi/libft/blob/main/ft_toupper.c) | convert lowercase letters to uppercase|
+| [**ft\_tolower()**](https://github.com/paulahemsi/libft/blob/main/ft_tolower.c) | convert uppercase letters to lowercase. |
 
 **string.h**
 
