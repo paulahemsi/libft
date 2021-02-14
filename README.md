@@ -63,7 +63,7 @@ The aim of this project is to code a C library regrouping usual functions.
 | --- | --- |
 | [**ft\_substr()**](https://github.com/paulahemsi/libft/blob/main/ft_substr.c) | Allocates and returns a substring from the string ’s’. The substring begins at index ’start’ and is of maximum size ’len’.|
 | [**ft\_strjoin()**](https://github.com/paulahemsi/libft/blob/main/ft_strjoin.c) | Allocates and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.|
-| [**ft\_strtrim()**](https://github.com/paulahemsi/libft/ft_strtrim.c) | Allocates and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string.|
+| [**ft\_strtrim()**](https://github.com/paulahemsi/libft/blob/main/ft_strtrim.c) | Allocates and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string.|
 | [**ft\_split()**](https://github.com/paulahemsi/libft/blob/main/ft_split.c) | Allocates and returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter.|
 | [**ft\_strmapi()**](https://github.com/paulahemsi/libft/blob/main/ft_strmapi.c) | Applies the function ’f’ to each character of the string ’s’ to create a new string resulting from successive applications of ’f’.|
 
