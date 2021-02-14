@@ -24,7 +24,7 @@ The aim of this project is to code a C library regrouping usual functions.
 | [**ft\_isdigit()**](https://github.com/paulahemsi/libft/blob/main/ft_isdigit.c) | checks for a digit (0 through 9).|
 | [**ft\_isalnum()**](https://github.com/paulahemsi/libft/blob/main/ft_isalnum.c) | checks for an alphanumeric character; it  is  equivalent  to (isalpha(c) || isdigit(c)).|
 | [**ft\_isascii()**](https://github.com/paulahemsi/libft/blob/main/ft_isascii.c) | checks  whether  c  is a 7-bit unsigned char value that fits into the ASCII character set. |
-| [**ft\_isprint()**](https://github.com/paulahemsi/libft/blob/main/ft_isprinti.c) | checks for any printable character including space.|
+| [**ft\_isprint()**](https://github.com/paulahemsi/libft/blob/main/ft_isprint.c) | checks for any printable character including space.|
 | [**ft\_toupper()**](https://github.com/paulahemsi/libft/blob/main/ft_toupper.c) | convert lowercase letters to uppercase|
 | [**ft\_tolower()**](https://github.com/paulahemsi/libft/blob/main/ft_tolower.c) | convert uppercase letters to lowercase. |
 
@@ -45,7 +45,7 @@ The aim of this project is to code a C library regrouping usual functions.
 | [**ft\_strchr()**](https://github.com/paulahemsi/libft/blob/main/ft_strchr.c) | returns a pointer to the first occurrence of the character c in the string s.|
 | [**ft\_strrchr()**](https://github.com/paulahemsi/libft/blob/main/ft_strrchr.c) | returns a pointer to the last occurrence  of the character c in the string s.|
 | [**ft\_strnstr()**](https://github.com/paulahemsi/libft/blob/main/ft_strnstr.c) | locates the first occurrence of the null-terminated string little in the string big, where not more than len characters are searched.|
-| [**ft\_strncmp()**](https://github.com/paulahemsi/libft/blob/main/ft_strcmp.c) | lexicographically compares the null-terminated strings s1 and s2. Returns an integer greater than, equal to, or less than 0, according as the string s1 is greater than, equal to, or less than the string s2. Compares not more than n characters. The comparison is done using unsigned characters, so that '\200' is greater than '\0'.|
+| [**ft\_strncmp()**](https://github.com/paulahemsi/libft/blob/main/ft_strncmp.c) | lexicographically compares the null-terminated strings s1 and s2. Returns an integer greater than, equal to, or less than 0, according as the string s1 is greater than, equal to, or less than the string s2. Compares not more than n characters. The comparison is done using unsigned characters, so that '\200' is greater than '\0'.|
 | [**ft\_strdup()**](https://github.com/paulahemsi/libft/blob/main/ft_strdup.c) | returns a pointer to a new string which is a duplicate  of  the string s.|
 
 **stdlib.h**  
@@ -94,7 +94,7 @@ The aim of this project is to code a C library regrouping usual functions.
 | [**ft\_lstlast()**](https://github.com/paulahemsi/libft/blob/main/ft_lstlast.c) | Returns the last element of the list.|
 | [**ft\_lstadd_back()**](https://github.com/paulahemsi/libft/blob/main/ft_lstadd_back.c) | Adds the element ’new’ at the end of the list.|
 | [**ft\_lstdelone()**](https://github.com/paulahemsi/libft/blob/main/ft_lstdelone.c) | Takes as a parameter an element and frees the memory of the element’s content using the function ’del’ given as a parameter and free the element.|
-| [**ft\_lstclear()**](https://github.com/paulahemsi/libft/blob/main/ft_lsclear.c) | Deletes and frees the given element and every successor of that element, using the function ’del’ and free. Finally, the pointer to the list is set to NULL.|
+| [**ft\_lstclear()**](https://github.com/paulahemsi/libft/blob/main/ft_lstclear.c) | Deletes and frees the given element and every successor of that element, using the function ’del’ and free. Finally, the pointer to the list is set to NULL.|
 | [**ft\_lstiter()**](https://github.com/paulahemsi/libft/blob/main/ft_lstiter.c) | Iterates the list ’lst’ and applies the function ’f’ to the content of each element.|
 | [**ft\_lstmap()**](https://github.com/paulahemsi/libft/blob/main/ft_lstmap.c) | Iterates the list ’lst’ and applies the function ’f’ to the content of each element. Creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of an element if needed.|
 
