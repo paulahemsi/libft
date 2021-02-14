@@ -114,6 +114,7 @@ The aim of this project is to code a C library regrouping usual functions.
 | [**ft\_isspace()**](https://github.com/paulahemsi/libft/blob/main/ft_isspace.c) | tests for the white-space characters. For any locale, this includes the following standard characters:  `\v`   `\n`   `\t`   `\r`   `\f`. Returns zero if the character tests false and returns non-zero if the character tests true.|
 | [**ft\_isblank()**](https://github.com/paulahemsi/libft/blob/main/ft_isblank.c) | checks for a blank character; that is, a space or a tab.|
 | [**ft\_isxdigit()**](https://github.com/paulahemsi/libft/blob/main/ft_isxdigit.c) |  checks for hexadecimal digits. |
+| [**ft\_isnegative()**](https://github.com/paulahemsi/libft/blob/main/ft_isnegative.c) |  checks if a number is negative. |
 | [**ft\_countdigit()**](https://github.com/paulahemsi/libft/blob/main/ft_countdigit.c) | Count the digits from an int.|
 
 ## Makefile
