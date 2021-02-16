@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 00:44:06 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/02/10 11:59:50 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/02/14 19:35:08 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_strchr(const char *s, int c)
 {
 	char	*c_in_s;
 
+	if (c > 127)
+		c %= 256;
 	while (*s != '\0')
 	{
 		if (*s == c)

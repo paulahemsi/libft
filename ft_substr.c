@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/08 11:36:13 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/02/13 00:45:01 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/02/15 16:43:09 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	}
 	i = 0;
-	while ((i < len) && ((start + i) < ft_strlen(s)))
+	while ((i < len) && ((start + i) < ft_strlen(s)) && (s[start + i] != '\0'))
 	{
 		new_string[i] = s[start + i];
 		i++;

@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 03:04:08 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/02/12 23:48:36 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/02/15 16:44:10 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ static size_t	word_count(char const *s, char c)
 	size_t		words_count;
 	size_t		i;
 
+	if (!s)
+		return (0);
 	words_count = 0;
 	i = 0;
 	while (s[i] != '\0')
@@ -49,6 +51,20 @@ static size_t	sub_len(char const *s, char c)
 	return (length);
 }
 
+static char		**free_str_array(char **str_array)
+{
+	size_t	i;
+
+	i = 0;
+	while (str_array[i])
+	{
+		free(str_array[i]);
+		i++;
+	}
+	free(str_array);
+	return (NULL);
+}
+
 char			**ft_split(char const *s, char c)
 {
 	char		**str_array;
@@ -58,7 +74,7 @@ char			**ft_split(char const *s, char c)
 	size_t		i;
 
 	words = word_count(s, c);
-	if (!(str_array = (char**)malloc((words + 1) * sizeof(char*))))
+	if (!(str_array = (char**)malloc((words + 1) * sizeof(char*))) || (!s))
 		return (NULL);
 	i = 0;
 	i_array = 0;
@@ -68,7 +84,7 @@ char			**ft_split(char const *s, char c)
 		{
 			sub_length = sub_len(&s[i], c);
 			if (!(str_array[i_array] = ft_substr(s, i, sub_length)))
-				return (NULL);
+				return (free_str_array(str_array));
 			i_array++;
 			i += sub_length - 1;
 		}

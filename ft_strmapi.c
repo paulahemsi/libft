@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/08 15:09:10 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/02/13 00:09:54 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/02/15 13:00:13 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 	char			*new_string;
 
-	if ((!s) || !(new_string = malloc((ft_strlen(s) + 1) * sizeof(char))))
+	if (!s)
+		return (NULL);
+	if (!(new_string = (char *)malloc((ft_strlen(s) + 1) * sizeof(char))))
 		return (NULL);
 	i = 0;
 	while (s[i] != '\0')

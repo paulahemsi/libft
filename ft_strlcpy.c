@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 21:31:25 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/02/13 00:28:09 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/02/15 11:12:00 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 
+	if (!src)
+		return (0);
 	i = 0;
 	if (size > 0)
 	{

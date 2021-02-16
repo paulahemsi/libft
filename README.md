@@ -131,3 +131,4 @@ The aim of this project is to code a C library regrouping usual functions.
 * [Libftest](https://github.com/jtoty/Libftest)
 * [libft Unit tests](https://github.com/alelievr/libft-unit-test)
 * [libft-war-machine](https://github.com/ska42/libft-war-machine)
+* [libftTester](https://github.com/Tripouille/libftTester)

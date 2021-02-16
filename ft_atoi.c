@@ -6,20 +6,30 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 02:08:07 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/02/08 20:43:56 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/02/15 17:20:24 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+static int	atoi_isspace(int c)
+{
+	if (c == ' ' || c == '\v' || c == '\n'
+		|| c == '\t' || c == '\r' || c == '\f')
+	{
+		return (1);
+	}
+	return (0);
+}
+
+int			ft_atoi(const char *nptr)
 {
 	int number;
 	int sign;
 
 	number = 0;
 	sign = 1;
-	while (ft_isspace(*nptr))
+	while (atoi_isspace(*nptr))
 	{
 		nptr++;
 	}

@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/08 11:21:33 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/02/13 00:27:55 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/02/15 13:38:02 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,7 @@ char	*ft_strdup(const char *s)
 	length = ft_strlen(s);
 	string = (char *)malloc(length + 1);
 	if (string == NULL)
-	{
 		return (NULL);
-	}
 	i = 0;
 	while (i < length)
 	{
