@@ -10,7 +10,7 @@
 * [Testing](#tests) 
 
 ## Introduction  
-The aim of this project is to code a C library regrouping usual functions.
+The aim of this [project](https://github.com/paulahemsi/libft/blob/main/en.subject.pdf) is to code a C library regrouping usual functions.
 * **First part:** re-code a set of the libc functions, as defined in their man, with the same prototype and behaviors as the originals.
 * **Second part:** code a set of functions that are either not included in the libc, or included in a different form.
 * **Bonus part:** code functions to manipulate lists.
