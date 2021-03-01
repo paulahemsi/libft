@@ -116,6 +116,8 @@ The aim of this [project](https://github.com/paulahemsi/libft/blob/main/en.subje
 | [**ft\_isxdigit**](https://github.com/paulahemsi/libft/blob/main/ft_isxdigit.c) |  checks for hexadecimal digits. |
 | [**ft\_isnegative**](https://github.com/paulahemsi/libft/blob/main/ft_isnegative.c) |  checks if a number is negative. |
 | [**ft\_countdigit**](https://github.com/paulahemsi/libft/blob/main/ft_countdigit.c) | Count the digits from an int.|
+| [**get\_next\_line**](https://github.com/paulahemsi/libft/blob/main/get_next_line.c) | Read a line from stdin or fd|
+| [**get\_next\_line\_multifd**](https://github.com/paulahemsi/libft/blob/main/get_next_line_multfd.c) | Read a line from multiples fd's|
 
 ## Makefile
 

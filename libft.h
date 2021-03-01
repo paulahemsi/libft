@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 19:02:18 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/02/14 20:55:05 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/03/01 09:36:16 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,21 @@
 # include <stdlib.h>
 # include <limits.h>
 # include <unistd.h>
+# include <sys/param.h>
+# include <sys/resource.h>
+
+# define READ_LINE		1
+# define ERROR			-1
+# define NEW_LINE		1
+# define NO_NEW_LINE	0
+
+typedef	struct	s_get_next_line
+{
+	char		read[BUFFER_SIZE + 1];
+	char		*temp;
+	char		*break_line_ptr;
+	int			read_return;
+}				t_gnl;
 
 typedef	struct	s_list
 {
@@ -92,5 +107,7 @@ int				ft_isblank(int c);
 int				ft_isxdigit(int c);
 int				ft_countdigit(unsigned int number);
 int				ft_isnegative(int number);
+int				get_next_line(int fd, char **line);
+int				get_next_line_multfd(int fd, char **line);
 
 #endif
