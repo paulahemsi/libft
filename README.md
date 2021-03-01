@@ -118,6 +118,7 @@ The aim of this [project](https://github.com/paulahemsi/libft/blob/main/en.subje
 | [**ft\_countdigit**](https://github.com/paulahemsi/libft/blob/main/ft_countdigit_bonus.c) | Count the digits from an int.|
 | [**get\_next\_line**](https://github.com/paulahemsi/libft/blob/main/get_next_line.c) | Read a line from stdin or fd|
 | [**get\_next\_line\_multifd**](https://github.com/paulahemsi/libft/blob/main/get_next_line_multfd.c) | Read a line from multiples fd's|
+| [**ft\_add**](https://github.com/paulahemsi/libft/blob/main/ft_add.c) | variadic function which returns the sum of the numbers passed as arguments. The first argument must be the amount of numbers to be summed.|
 
 ## Makefile
 

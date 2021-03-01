@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 19:02:18 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/03/01 09:36:16 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/03/01 13:41:46 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <unistd.h>
 # include <sys/param.h>
 # include <sys/resource.h>
+# include <stdarg.h>
 
 # define READ_LINE		1
 # define ERROR			-1
@@ -109,5 +110,6 @@ int				ft_countdigit(unsigned int number);
 int				ft_isnegative(int number);
 int				get_next_line(int fd, char **line);
 int				get_next_line_multfd(int fd, char **line);
+int				ft_add(int args, ...);
 
 #endif
