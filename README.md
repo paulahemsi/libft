@@ -104,20 +104,20 @@ The aim of this [project](https://github.com/paulahemsi/libft/blob/main/en.subje
 
 | Function | Description |
 | --- | --- |
-| [**ft\_putchar**](https://github.com/paulahemsi/libft/blob/main/ft_putchar.c) | outputs the character c to the standard output.|
-| [**ft\_putstr**](https://github.com/paulahemsi/libft/blob/main/ft_putstr.c) | outputs a string to the standard output.|
-| [**ft\_putendl**](https://github.com/paulahemsi/libft/blob/main/ft_putendl.c) | outputs a string to the standard output, followed by a newline.|
-| [**ft\_putnbr**](https://github.com/paulahemsi/libft/blob/main/ft_putnbr.c) | outputs the integer n to the standard output|
-| [**ft\_strequ**](https://github.com/paulahemsi/libft/blob/main/ft_strequ.c) | lexicographical comparison between s1 and s2. If the 2 strings are identical the function returns 1, or 0 otherwise.|
-| [**ft\_strnequ**](https://github.com/paulahemsi/libft/blob/main/ft_strnequ.c) | lexicographical comparison between s1 and s2. If the 2 strings are identical the function returns 1, or 0 otherwise.|
-| [**ft\_strclr**](https://github.com/paulahemsi/libft/blob/main/ft_strclr.c) | sets every character of the string s to '\0'.|
-| [**ft\_isspace**](https://github.com/paulahemsi/libft/blob/main/ft_isspace.c) | tests for the white-space characters. For any locale, this includes the following standard characters:  `\v`   `\n`   `\t`   `\r`   `\f`. Returns zero if the character tests false and returns non-zero if the character tests true.|
-| [**ft\_isblank**](https://github.com/paulahemsi/libft/blob/main/ft_isblank.c) | checks for a blank character; that is, a space or a tab.|
-| [**ft\_isxdigit**](https://github.com/paulahemsi/libft/blob/main/ft_isxdigit.c) |  checks for hexadecimal digits. |
-| [**ft\_isnegative**](https://github.com/paulahemsi/libft/blob/main/ft_isnegative.c) |  checks if a number is negative. |
-| [**ft\_countdigit**](https://github.com/paulahemsi/libft/blob/main/ft_countdigit.c) | Count the digits from an int.|
+| [**ft\_putchar**](https://github.com/paulahemsi/libft/blob/main/ft_putchar_bonus.c) | outputs the character c to the standard output.|
+| [**ft\_putstr**](https://github.com/paulahemsi/libft/blob/main/ft_putstr_bonus.c) | outputs a string to the standard output.|
+| [**ft\_putendl**](https://github.com/paulahemsi/libft/blob/main/ft_putendl_bonus.c) | outputs a string to the standard output, followed by a newline.|
+| [**ft\_putnbr**](https://github.com/paulahemsi/libft/blob/main/ft_putnbr_bonus.c) | outputs the integer n to the standard output|
+| [**ft\_strequ**](https://github.com/paulahemsi/libft/blob/main/ft_strequ_bonus.c) | lexicographical comparison between s1 and s2. If the 2 strings are identical the function returns 1, or 0 otherwise.|
+| [**ft\_strnequ**](https://github.com/paulahemsi/libft/blob/main/ft_strnequ_bonus.c) | lexicographical comparison between s1 and s2. If the 2 strings are identical the function returns 1, or 0 otherwise.|
+| [**ft\_strclr**](https://github.com/paulahemsi/libft/blob/main/ft_strclr_bonus.c) | sets every character of the string s to '\0'.|
+| [**ft\_isspace**](https://github.com/paulahemsi/libft/blob/main/ft_isspace_bonus.c) | tests for the white-space characters. For any locale, this includes the following standard characters:  `\v`   `\n`   `\t`   `\r`   `\f`. Returns zero if the character tests false and returns non-zero if the character tests true.|
+| [**ft\_isblank**](https://github.com/paulahemsi/libft/blob/main/ft_isblank_bonus.c) | checks for a blank character; that is, a space or a tab.|
+| [**ft\_isxdigit**](https://github.com/paulahemsi/libft/blob/main/ft_isxdigit_bonus.c) |  checks for hexadecimal digits. |
+| [**ft\_isnegative**](https://github.com/paulahemsi/libft/blob/main/ft_isnegative_bonus.c) |  checks if a number is negative. |
+| [**ft\_countdigit**](https://github.com/paulahemsi/libft/blob/main/ft_countdigit_bonus.c) | Count the digits from an int.|
 | [**get\_next\_line**](https://github.com/paulahemsi/libft/blob/main/get_next_line.c) | Read a line from stdin or fd|
-| [**get\_next\_line\_multifd**](https://github.com/paulahemsi/libft/blob/main/get_next_line_multfd.c) | Read a line from stdin or multiples fd's|
+| [**get\_next\_line\_multifd**](https://github.com/paulahemsi/libft/blob/main/get_next_line_multfd.c) | Read a line from multiples fd's|
 
 ## Makefile
 
