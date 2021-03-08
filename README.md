@@ -115,7 +115,8 @@ The aim of this [project](https://github.com/paulahemsi/libft/blob/main/en.subje
 | [**ft\_isblank**](https://github.com/paulahemsi/libft/blob/main/ft_isblank_bonus.c) | checks for a blank character; that is, a space or a tab.|
 | [**ft\_isxdigit**](https://github.com/paulahemsi/libft/blob/main/ft_isxdigit_bonus.c) |  checks for hexadecimal digits. |
 | [**ft\_isnegative**](https://github.com/paulahemsi/libft/blob/main/ft_isnegative_bonus.c) |  checks if a number is negative. |
-| [**ft\_countdigit**](https://github.com/paulahemsi/libft/blob/main/ft_countdigit_bonus.c) | Count the digits from an int.|
+| [**ft\_countdigit**](https://github.com/paulahemsi/libft/blob/main/ft_countdigit_bonus.c) | Count the digits from an unsigned int.|
+| [**ft\_numlen**](https://github.com/paulahemsi/libft/blob/main/ft_numlen.c) | Count the digits from an int.|
 | [**get\_next\_line**](https://github.com/paulahemsi/libft/blob/main/get_next_line.c) | Read a line from stdin or fd|
 | [**get\_next\_line\_multifd**](https://github.com/paulahemsi/libft/blob/main/get_next_line_multfd.c) | Read a line from multiples fd's|
 | [**ft\_add**](https://github.com/paulahemsi/libft/blob/main/ft_add.c) | variadic function which returns the sum of the numbers passed as arguments. The first argument must be the amount of numbers to be summed.|
