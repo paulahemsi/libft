@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 19:02:18 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/03/01 13:41:46 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/03/07 22:12:22 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,5 +111,6 @@ int				ft_isnegative(int number);
 int				get_next_line(int fd, char **line);
 int				get_next_line_multfd(int fd, char **line);
 int				ft_add(int args, ...);
+int		ft_numlen(int number);
 
 #endif
