@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 19:02:18 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/03/07 22:12:22 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/03/12 10:40:57 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,6 +111,7 @@ int				ft_isnegative(int number);
 int				get_next_line(int fd, char **line);
 int				get_next_line_multfd(int fd, char **line);
 int				ft_add(int args, ...);
-int		ft_numlen(int number);
+int				ft_numlen(int number);
+char			*ft_itoa_hex(unsigned int number, char case_char);
 
 #endif
