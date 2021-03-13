@@ -121,6 +121,8 @@ The aim of this [project](https://github.com/paulahemsi/libft/blob/main/en.subje
 | [**get\_next\_line\_multifd**](https://github.com/paulahemsi/libft/blob/main/get_next_line_multfd.c) | Read a line from multiples fd's|
 | [**ft\_add**](https://github.com/paulahemsi/libft/blob/main/ft_add.c) | variadic function which returns the sum of the numbers passed as arguments. The first argument must be the amount of numbers to be summed.|
 | [**ft\_itoa_hex**](https://github.com/paulahemsi/libft/blob/main/ft_itoa_hex.c) | Convert the decimal unsigned integer received as argument to hexadecimal. Allocates and returns a string with the hex number.|
+| [**ft\_putnbr\_unsigned**](https://github.com/paulahemsi/libft/blob/main/ft_putnbr_unsigned.c) | outputs the unsigned integer n to the standard output.|
+
 
 ## Makefile
 
