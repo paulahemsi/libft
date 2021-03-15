@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 19:02:18 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/03/13 13:38:19 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/03/15 12:40:36 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,15 @@ typedef	struct	s_list
 	void			*content;
 	struct s_list	*next;
 }				t_list;
+
+typedef	struct	s_itoa_hex
+{
+	char	*hex;
+	int		to_hex;
+	int		length;
+	int		case_c;
+	char	temp;
+}				t_itoa_hex;
 
 /*
 **  PART 1

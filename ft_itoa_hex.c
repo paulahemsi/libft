@@ -6,37 +6,61 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/12 09:50:17 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/03/12 10:34:35 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/03/15 12:08:53 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa_hex(unsigned int number, char case_conversion_char)
+static void	invert_hex(t_itoa_hex *aux)
 {
-	char	*hex;
-	int		convert_to_hex;
-	int		length;
-	int		case_conversion;
+	int i;
 
-	length = ft_countdigit(number);
-	hex = (char *)malloc((length + 1) * sizeof(char));
-	if (!hex)
-		return (NULL);
-	hex[length] = '\0';
-	if (case_conversion_char == 'X')
-		case_conversion = 55;
-	else
-		case_conversion = 87;
-	while (number > 0)
+	i = 0;
+	while (i < (aux->length / 2))
 	{
-		length--;
-		convert_to_hex = number % 16;
-		if (convert_to_hex < 10)
-			hex[length] = convert_to_hex + 48;
-		else
-			hex[length] = convert_to_hex + case_conversion;
-		number /= 16;
+		aux->temp = aux->hex[i];
+		aux->hex[i] = aux->hex[aux->length - i - 1];
+		aux->hex[aux->length - i - 1] = aux->temp;
+		i++;
 	}
-	return (hex);
+}
+
+static void	convert_to_hex(t_itoa_hex *aux, unsigned long int *number)
+{
+	while (*number > 0)
+	{
+		aux->to_hex = *number % 16;
+		if (aux->to_hex < 10)
+			aux->hex[aux->length] = aux->to_hex + 48;
+		else
+			aux->hex[aux->length] = aux->to_hex + aux->case_c;
+		*number /= 16;
+		aux->length++;
+	}
+}
+
+char		*ft_itoa_hex(unsigned long int number, char case_conversion_char)
+{
+	t_itoa_hex	aux;
+
+	aux.length = ft_countdigit(number);
+	if (!(aux.hex = (char *)malloc((aux.length + 1) * sizeof(char))))
+		return (NULL);
+	if (case_conversion_char == 'X')
+		aux.case_c = 55;
+	else
+		aux.case_c = 87;
+	if (number == 0)
+	{
+		aux.hex[0] = '0';
+		aux.hex[1] = '\0';
+		return (aux.hex);
+	}
+	aux.length = 0;
+	convert_to_hex(&aux, &number);
+	aux.hex[aux.length] = '\0';
+	aux.length = ft_strlen(aux.hex);
+	invert_hex(&aux);
+	return (aux.hex);
 }
