@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_dlstclear.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/03 23:47:26 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/04/19 21:07:18 by phemsi-a         ###   ########.fr       */
+/*   Created: 2021/02/11 12:31:38 by phemsi-a          #+#    #+#             */
+/*   Updated: 2021/05/29 12:53:08 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	ft_dlstclear(t_dlist **lst)
 {
-	char	*dest_cast;
-	char	*src_cast;
+	t_dlist	*aux;
+	t_dlist	*temp;
 
-	if (!(dest) && !(src) && (n > 0))
-		return (NULL);
-	dest_cast = (char *)dest;
-	src_cast = (char *)src;
-	while (n > 0)
+	aux = *lst;
+	if (aux == NULL)
+		return ;
+	while (aux != NULL)
 	{
-		*dest_cast = *src_cast;
-		dest_cast++;
-		src_cast++;
-		n--;
+		temp = aux->next;
+		free(aux);
+		aux = temp;
 	}
-	return (dest);
+	*lst = NULL;
 }

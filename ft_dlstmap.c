@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_dlstmap.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/03 23:47:26 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/04/19 21:07:18 by phemsi-a         ###   ########.fr       */
+/*   Created: 2021/02/11 18:48:23 by phemsi-a          #+#    #+#             */
+/*   Updated: 2021/05/29 12:58:31 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+t_dlist	*ft_dlstmap(t_dlist *lst, int(*f)(int), void (*del)(int))
 {
-	char	*dest_cast;
-	char	*src_cast;
+	t_dlist	*new_list;
+	t_dlist	*temp;
 
-	if (!(dest) && !(src) && (n > 0))
-		return (NULL);
-	dest_cast = (char *)dest;
-	src_cast = (char *)src;
-	while (n > 0)
+	new_list = NULL;
+	while (lst != NULL)
 	{
-		*dest_cast = *src_cast;
-		dest_cast++;
-		src_cast++;
-		n--;
+		temp = ft_dlstnew(f(lst->content));
+		if (temp == NULL)
+		{
+			if (new_list != NULL)
+			{
+				ft_dlstclear(&new_list);
+			}
+			return (NULL);
+		}
+		ft_dlstadd_back(&new_list, temp);
+		lst = lst->next;
 	}
-	return (dest);
+	return (new_list);
 }

@@ -27,6 +27,7 @@ The aim of this [project](https://github.com/paulahemsi/libft/blob/main/en.subje
 | [**ft\_isalnum**](https://github.com/paulahemsi/libft/blob/main/ft_isalnum.c) | checks for an alphanumeric character; it  is  equivalent  to (isalpha(c) || isdigit(c)).|
 | [**ft\_isascii**](https://github.com/paulahemsi/libft/blob/main/ft_isascii.c) | checks  whether  c  is a 7-bit unsigned char value that fits into the ASCII character set. |
 | [**ft\_isprint**](https://github.com/paulahemsi/libft/blob/main/ft_isprint.c) | checks for any printable character including space.|
+| [**ft\_isupper**](https://github.com/paulahemsi/libft/blob/main/ft_isupper.c) | checks if character is uppercase.|
 | [**ft\_toupper**](https://github.com/paulahemsi/libft/blob/main/ft_toupper.c) | convert lowercase letters to uppercase|
 | [**ft\_tolower**](https://github.com/paulahemsi/libft/blob/main/ft_tolower.c) | convert uppercase letters to lowercase. |
 
@@ -100,6 +101,20 @@ The aim of this [project](https://github.com/paulahemsi/libft/blob/main/en.subje
 | [**ft\_lstiter**](https://github.com/paulahemsi/libft/blob/main/ft_lstiter.c) | Iterates the list ’lst’ and applies the function ’f’ to the content of each element.|
 | [**ft\_lstmap**](https://github.com/paulahemsi/libft/blob/main/ft_lstmap.c) | Iterates the list ’lst’ and applies the function ’f’ to the content of each element. Creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of an element if needed.|
 
+**Double Linked Lists**
+
+| Function | Description |
+| --- | --- |
+| [**ft\_dlstnew**](https://github.com/paulahemsi/libft/blob/main/ft_dlstnew.c) | Allocates and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL.|
+| [**ft\_dlstadd_front**](https://github.com/paulahemsi/libft/blob/main/ft_dlstadd_front.c) | Adds the element ’new’ at the beginning of the double linked list.|
+| [**ft\_dlstsize**](https://github.com/paulahemsi/libft/blob/main/ft_dlstsize.c) | Counts the number of elements in a double linked list.|
+| [**ft\_dlstlast**](https://github.com/paulahemsi/libft/blob/main/ft_dlstlast.c) | Returns the last element of the double linked list.|
+| [**ft\_dlstadd_back**](https://github.com/paulahemsi/libft/blob/main/ft_dlstadd_back.c) | Adds the element ’new’ at the end of the double linked list.|
+| [**ft\_dlstdelone**](https://github.com/paulahemsi/libft/blob/main/ft_dlstdelone.c) | Takes as a parameter an element and frees the memory of the element’s content using the function ’del’ given as a parameter and free the element.|
+| [**ft\_dlstclear**](https://github.com/paulahemsi/libft/blob/main/ft_dlstclear.c) | Deletes and frees the given element and every successor of that element, using the function ’del’ and free. Finally, the pointer to the double linked list is set to NULL.|
+| [**ft\_dlstiter**](https://github.com/paulahemsi/libft/blob/main/ft_dlstiter.c) | Iterates the double linked list ’lst’ and applies the function ’f’ to the content of each element.|
+| [**ft\_dlstmap**](https://github.com/paulahemsi/libft/blob/main/ft_dlstmap.c) | Iterates the double linked list ’lst’ and applies the function ’f’ to the content of each element. Creates a new double linked list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of an element if needed.|
+
 ### Extras
 
 | Function | Description |
@@ -122,6 +137,7 @@ The aim of this [project](https://github.com/paulahemsi/libft/blob/main/en.subje
 | [**ft\_add**](https://github.com/paulahemsi/libft/blob/main/ft_add.c) | variadic function which returns the sum of the numbers passed as arguments. The first argument must be the amount of numbers to be summed.|
 | [**ft\_itoa_hex**](https://github.com/paulahemsi/libft/blob/main/ft_itoa_hex.c) | Convert the decimal unsigned integer received as argument to hexadecimal. Allocates and returns a string with the hex number.|
 | [**ft\_putnbr\_unsigned**](https://github.com/paulahemsi/libft/blob/main/ft_putnbr_unsigned.c) | outputs the unsigned integer n to the standard output.|
+| [**ft\_free\_and\_null**](https://github.com/paulahemsi/libft/blob/main/ft_free_and_null.c) | frees and null the given pointer.|
 
 
 ## Makefile

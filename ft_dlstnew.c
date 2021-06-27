@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_dlstnew.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/03 23:47:26 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/04/19 21:07:18 by phemsi-a         ###   ########.fr       */
+/*   Created: 2021/02/10 23:32:38 by phemsi-a          #+#    #+#             */
+/*   Updated: 2021/06/27 14:41:16 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+t_dlist	*ft_dlstnew(int content)
 {
-	char	*dest_cast;
-	char	*src_cast;
+	t_dlist	*pointer;
 
-	if (!(dest) && !(src) && (n > 0))
+	pointer = (t_dlist *)malloc(sizeof(t_dlist));
+	if (!(pointer))
 		return (NULL);
-	dest_cast = (char *)dest;
-	src_cast = (char *)src;
-	while (n > 0)
-	{
-		*dest_cast = *src_cast;
-		dest_cast++;
-		src_cast++;
-		n--;
-	}
-	return (dest);
+	pointer->content = content;
+	pointer->next = NULL;
+	pointer->previous = NULL;
+	return (pointer);
 }
