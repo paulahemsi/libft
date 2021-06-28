@@ -3,21 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apuchill <apuchill@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/12/02 21:32:49 by apuchill          #+#    #+#             */
-/*   Updated: 2021/03/28 12:45:38 by apuchill         ###   ########.fr       */
+/*   Created: 2021/06/28 11:07:09 by phemsi-a          #+#    #+#             */
+/*   Updated: 2021/06/28 11:11:57 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** LIBRARY: <string.h>
-** SYNOPSIS: compare strings
-**
-** DESCRIPTION:
-** 		The strcmp() and strncmp() functions lexicographically compare the null-
-**	terminated strings s1 and s2.
-*/
 
 #include "libft.h"
 
@@ -26,7 +17,11 @@ int	ft_strcmp(const char *s1, const char *s2)
 	size_t	i;
 
 	i = 0;
-	while ((s1[i] == s2[i]) && (s1[i] != '\0') && (s2[i] != '\0'))
+	while ((s1[i]) && (s2[i]))
+	{
+		if (s1[i] != s2[i])
+			break;
 		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	}
+	return ((const unsigned char)s1[i] - (const unsigned char)s2[i]);
 }
