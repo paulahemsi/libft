@@ -6,7 +6,7 @@
 #    By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/06 19:52:46 by phemsi-a          #+#    #+#              #
-#    Updated: 2021/06/27 19:30:06 by phemsi-a         ###   ########.fr        #
+#    Updated: 2021/06/28 12:10:56 by phemsi-a         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ OBJECTS = $(FILES:.c=.o) ft_printf.o flags_parser.o print_char.o print_string.o 
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	@ar -rcs $(NAME) $(OBJECTS)
+	ar -rcs $(NAME) $(OBJECTS)
 	
 $(OBJECTS): $(FILES) $(PTF_FILES)
 	@$(CC) $(FLAGS) -c $(FILES) $(PTF_FILES)
