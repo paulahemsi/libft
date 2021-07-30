@@ -6,7 +6,7 @@
 /*   By: phemsi-a <phemsi-a@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 19:02:18 by phemsi-a          #+#    #+#             */
-/*   Updated: 2021/06/28 12:24:09 by phemsi-a         ###   ########.fr       */
+/*   Updated: 2021/07/30 20:30:23 by phemsi-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -169,6 +169,7 @@ void			ft_putnbr_unsigned(unsigned int nb);
 int				ft_isupper(int c);
 void			ft_free_and_null(void **pointer);
 int				ft_strcmp(const char *s1, const char *s2);
+char			*variadic_strjoin(unsigned int arg_quantity, ...);
 /*
 **  FT_PRINTF
 */
